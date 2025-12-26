@@ -15,6 +15,7 @@ public class RentalService {
         double total = 0;
         for (Vehicle v : vehiculos) {
             total += v.calculate(dias);
+            System.out.println("Modelo: " + v.getModelo() + ", Costo de renta por " + dias + " días: $" + v.calculate(dias));
         }
         return total;
     }
